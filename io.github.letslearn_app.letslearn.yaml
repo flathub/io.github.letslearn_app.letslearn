@@ -11,7 +11,8 @@ separate-locales: false
 finish-args:
   - --share=ipc
   - --device=dri
-  - --socket=x11
+  - --socket=fallback-x11
+  - --socket=wayland
   - --share=network
 build-options:
   append-path: /usr/lib/sdk/node16/bin
@@ -53,4 +54,4 @@ modules:
     - type: script
       dest-filename: run.sh
       commands:
-        - zypak-wrapper.sh /app/main/letslearn "$@"
+        - zypak-wrapper.sh /app/main/letslearn --ozone-platform-hint=auto "$@"
