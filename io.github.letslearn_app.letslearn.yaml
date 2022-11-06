@@ -44,7 +44,7 @@ modules:
     sources:
     - type: git
       url: https://github.com/letslearn-app/letslearn.git
-      commit: 9ae8b8ec82ce16a0acf7538ad197a515e5bfcfd9 
+      commit: 90c823c726bd55032976ad5701b9217019b845b4
       dest: main
     - generated-sources.json
       #- type: dir
