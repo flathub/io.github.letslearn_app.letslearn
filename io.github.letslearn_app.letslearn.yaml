@@ -14,6 +14,7 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --share=network
+  - --env=XDG_CONFIG_HOME=XDG_DATA_HOME
 build-options:
   append-path: /usr/lib/sdk/node16/bin
 
@@ -44,7 +45,7 @@ modules:
     sources:
     - type: git
       url: https://github.com/letslearn-app/letslearn.git
-      commit: 90c823c726bd55032976ad5701b9217019b845b4
+      commit: fa6c2477227db0ff74881a6e98de095c7ec03f50 
       dest: main
     - generated-sources.json
       #- type: dir
