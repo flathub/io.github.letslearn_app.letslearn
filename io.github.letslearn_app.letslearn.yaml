@@ -47,6 +47,8 @@ modules:
       url: https://github.com/letslearn-app/letslearn.git
       commit: c44cf4c7ad62f46c064fecaf01089f8516449784
       dest: main
+    - type: patch
+      path: fix-appdata.patch
     - generated-sources.json
       #- type: dir
       #  path: ..
